@@ -1,0 +1,27 @@
+{
+  "name": "linearjs",
+  "version": "0.0.0",
+  "description": "Linear algebra javascript package",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guyius/linearjs.git"
+  },
+  "keywords": [
+    "linear",
+    "algebar",
+    "javascript",
+    "npm",
+    "matrix",
+    "vector"
+  ],
+  "author": "guy biton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guyius/linearjs/issues"
+  },
+  "homepage": "https://github.com/guyius/linearjs#readme"
+}
