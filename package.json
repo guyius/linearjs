@@ -2,9 +2,16 @@
   "name": "linearjs",
   "version": "0.0.0",
   "description": "Linear algebra javascript package",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
-    "test": "test"
+    "tsc": "tsc",
+    "watch:tsc": "tsc --watch",
+    "test": "mocha --opts mocha.config",
+    "watch:test": "mocha --opts mocha.config --watch",
+    "watch:dev": "tsc --watch & mocha --opts mocha.config --watch",
+    "prepublish": "npm run build",
+    "build": "npm run tsc && npm run test"
   },
   "repository": {
     "type": "git",
@@ -23,5 +30,13 @@
   "bugs": {
     "url": "https://github.com/guyius/linearjs/issues"
   },
-  "homepage": "https://github.com/guyius/linearjs#readme"
+  "homepage": "https://github.com/guyius/linearjs#readme",
+  "devDependencies": {
+    "@types/chai": "^4.0.1",
+    "@types/mocha": "^2.2.41",
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2",
+    "ts-node": "^3.2.1",
+    "typescript": "^2.4.2"
+  }
 }
